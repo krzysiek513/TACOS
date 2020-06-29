@@ -23,15 +23,8 @@ import pl.restauracja.tacos.main.Info;
 import pl.restauracja.tacos.usefull.Lista;
 import pl.restauracja.tacos.usefull.ListaTrzyAdapter;
 
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
-import com.google.android.gms.ads.AdRequest;
 
 public class Lokale extends AppCompatActivity {
-
-    private AdView mAdView;
 
     Intent intent;
     ListView listView;
@@ -74,15 +67,6 @@ public class Lokale extends AppCompatActivity {
             }
         });
 
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
-
-        mAdView = findViewById(R.id.adView1);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
     }
 
     @Override

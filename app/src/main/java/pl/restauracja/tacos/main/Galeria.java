@@ -9,24 +9,12 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
-import android.widget.ListView;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
-
-import java.util.ArrayList;
 
 import pl.restauracja.tacos.R;
 import pl.restauracja.tacos.usefull.Lista;
 
 public class Galeria extends AppCompatActivity {
-
-    private AdView mAdView1;
-    private AdView mAdView2;
-    private AdView mAdView3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,19 +25,7 @@ public class Galeria extends AppCompatActivity {
         ActionBar ab = getSupportActionBar();
         ab.setDisplayHomeAsUpEnabled(true);
 
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
 
-        mAdView1 = findViewById(R.id.adViewGal1);
-        mAdView2 = findViewById(R.id.adViewGal2);
-        mAdView3 = findViewById(R.id.adViewGal3);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView1.loadAd(adRequest);
-        mAdView2.loadAd(adRequest);
-        mAdView3.loadAd(adRequest);
     }
 
     @Override

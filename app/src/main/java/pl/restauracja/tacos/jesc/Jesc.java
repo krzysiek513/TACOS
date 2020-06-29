@@ -30,7 +30,7 @@ public class Jesc extends AppCompatActivity {
         setSupportActionBar(toolbar);
         ActionBar ab = getSupportActionBar();
         ab.setDisplayHomeAsUpEnabled(true);
-        listView = findViewById(R.id.List_dania);
+       // listView = findViewById(R.id.List_dania);
 
         data = new ArrayList<>();
         data.add(new Lista(R.drawable.danie_jeden, getString(R.string.danie_jeden), getString(R.string.danie_opis_jeden)));

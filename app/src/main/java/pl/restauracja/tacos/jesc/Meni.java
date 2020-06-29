@@ -9,21 +9,13 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
-
 import pl.restauracja.tacos.R;
 import pl.restauracja.tacos.main.Info;
 
 public class Meni extends AppCompatActivity {
 
 
-    private AdView mAdView1;
-    private AdView mAdView2;
-    private AdView mAdView3;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,19 +26,7 @@ public class Meni extends AppCompatActivity {
         ActionBar ab = getSupportActionBar();
         ab.setDisplayHomeAsUpEnabled(true);
 
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
 
-        mAdView1 = findViewById(R.id.adViewMeni1);
-        mAdView2 = findViewById(R.id.adViewMeni2);
-        mAdView3 = findViewById(R.id.adViewMeni3);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView1.loadAd(adRequest);
-        mAdView2.loadAd(adRequest);
-        mAdView3.loadAd(adRequest);
 
 
 
