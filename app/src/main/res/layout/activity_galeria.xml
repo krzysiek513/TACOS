@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.Galeria"
+    android:orientation="vertical"
+    android:background="@drawable/deski">
+    <include layout="@layout/layout_appbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+<!--            ca-app-pub-6256462697226881/7647851118-->
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="310sp"
+                android:src="@drawable/galeria1"
+                android:layout_marginTop="10sp"
+                android:scaleType="centerInside"/>
+
+<!--            ca-app-pub-6256462697226881/8213498335-->
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="290sp"
+                android:src="@drawable/galeria2"
+                android:layout_marginTop="10sp"
+                android:scaleType="centerInside"/>
+
+<!--            ca-app-pub-6256462697226881/5760054378-->
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="640sp"
+                android:layout_marginTop="10sp"
+                android:scaleType="fitStart"
+                android:src="@drawable/galeria"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

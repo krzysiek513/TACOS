@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pl.restauracja.tacos">
+
+    <application
+        android:label="@string/app_name"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6256462697226881~2569115951"/>
+
+        <activity
+            android:name=".lokal.FoodTrackGaleria"
+            android:label="Galeria"
+            android:parentActivityName=".lokal.FoodTrack"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".lokal.GaleriaRancho"
+            android:label="Galeria"
+            android:parentActivityName=".lokal.Ranczo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.Galeria"
+            android:label="Galeria"
+            android:parentActivityName=".main.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.Logo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".jesc.Meni"
+            android:label="@string/Meni"
+            android:parentActivityName=".main.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".lokal.FoodTrack"
+            android:label="@string/Foodtack"
+            android:parentActivityName=".lokal.Lokale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".lokal.Ranczo"
+            android:label="@string/Ranczo"
+            android:parentActivityName=".lokal.Lokale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".jesc.Jesc"
+            android:label="@string/main_jadlospis"
+            android:parentActivityName=".main.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".lokal.Lokale"
+            android:label="@string/Restauracje"
+            android:parentActivityName=".main.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.Info"
+            android:label="@string/informacja"
+            android:parentActivityName=".main.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".jesc.Jesc"
+    android:background="@drawable/deski"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_appbar"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="5sp"
+        android:src="@drawable/lokal_dwa" />
+<!--    ca-app-pub-6256462697226881/7914610271-->
+
+
+    <ListView
+        android:id="@+id/list_lokal_dwa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
