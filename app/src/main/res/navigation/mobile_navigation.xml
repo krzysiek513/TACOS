@@ -13,13 +13,13 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="pl.studia.botttormnavigation.ui.dashboard.DashboardFragment"
+        android:name="pl.studia.botttormnavigation.ui.dashboard.MenuFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="pl.studia.botttormnavigation.ui.notifications.NotificationsFragment"
+        android:name="pl.studia.botttormnavigation.ui.notifications.KoszykFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
 </navigation>
